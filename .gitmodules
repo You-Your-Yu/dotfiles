@@ -4,3 +4,6 @@
 [submodule "bin/.zprezto"]
 	path = bin/.zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
+[submodule "bin/.vim/iceberg.vim"]
+	path = bin/.vim/iceberg.vim
+	url = https://github.com/cocopon/iceberg.vim.git
