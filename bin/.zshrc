@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# zsh起動時にtmux起動
+[[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux

@@ -7,5 +7,5 @@ for file in ${DOTFILES}/bin/.??*; do
     ln -s ${file} ${HOME}/${file##*/}
 done
 
-# load configurations
-source ${HOME}/.zshrc
+# restart zsh
+exec $SHELL -l
