@@ -13,4 +13,4 @@ fi
 # Customize to your needs...
 
 # zsh起動時にtmux起動
-[[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux
+# [[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux
