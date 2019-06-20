@@ -21,3 +21,8 @@ fi
 
 # zsh起動時にtmux起動
 #[[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
