@@ -23,3 +23,8 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# fujiso-san configuration
+alias gpu='watch -n1 "hostname; nvidia-smi pmon -s um -c 1"'
+alias imux='tmux attach || tmux new-session \; source-file ~/.tmux/imux'
+
