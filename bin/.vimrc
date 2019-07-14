@@ -1,3 +1,6 @@
+"左右のカーソル移動で行間移動可能にする。
+set whichwrap=b,s,<,>,[,]
+
 " line number
 set number
 
@@ -19,5 +22,3 @@ colorscheme iceberg
 imap <C-j> <esc>
 noremap! <C-j> <esc>
 
-"左右のカーソル移動で行間移動可能にする。
-set whichwrap=b,s,<,>,[,]
