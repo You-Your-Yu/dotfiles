@@ -21,9 +21,11 @@ colorscheme iceberg
 " <esc> -> <C-j>
 imap <C-j> <esc>
 noremap! <C-j> <esc>
+"jjで<esc>
+inoremap <silent> jj <esc>
 "行頭・行末移動
-inoremap <C-e> <Esc>$a
-inoremap <C-a> <Esc>^a
-noremap <C-e> <Esc>$a
-noremap <C-a> <Esc>^a
+inoremap <C-e> <Esc>$
+inoremap <C-a> <Esc>^
+noremap <C-e> <Esc>$
+noremap <C-a> <Esc>^
 
