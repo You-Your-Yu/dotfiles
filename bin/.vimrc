@@ -28,4 +28,12 @@ inoremap <C-e> <Esc>$
 inoremap <C-a> <Esc>^
 noremap <C-e> <Esc>$
 noremap <C-a> <Esc>^
+"コマンドモードに
+inoremap <silent> jj <ESC>
+"Ctrlで挿入モードでカーソル移動
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-d> <BS>
 
