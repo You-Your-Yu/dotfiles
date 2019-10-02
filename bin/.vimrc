@@ -57,3 +57,4 @@ inoremap <C-a> <C-o>^
 inoremap <C-e> <C-o>$
 inoremap <C-u> <ESC>ui
 inoremap <C-r> <ESC><C-r>i
+inoremap <C-s> <ESC>:wi
