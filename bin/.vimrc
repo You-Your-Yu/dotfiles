@@ -37,21 +37,27 @@ noremap! <C-j> <esc>
 "jjで<esc>
 inoremap <silent> jj <esc>
 
+"折返し時のjk
+noremap j gj
+noremap k gk
+
 "ノーマルモードでもctrl+hjklで移動
 noremap <C-h> h
-noremap <C-j> j
-noremap <C-k> k
+noremap <C-j> gj
+noremap <C-k> gk
 noremap <C-l> l
 "行頭・行末移動
-noremap <C-e> $<RIGHT>i
+noremap <C-e> $<RIGHT>a
 noremap <C-a> ^i
+noremap <S-l> $<RIGHT>a
+noremap <S-h> ^i
 "コマンドモードに
 inoremap <silent> jj <ESC>
 "Ctrlで挿入モードでカーソル移動
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
+inoremap <C-k> <ESC>gka
+inoremap <C-j> <ESC>gja
+inoremap <C-h> <ESC>ha
+inoremap <C-l> <ESC>la
 inoremap <C-d> <BS>
 inoremap <C-a> <C-o>^
 inoremap <C-e> <C-o>$
