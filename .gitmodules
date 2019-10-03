@@ -5,6 +5,3 @@
 [submodule "bin/.vim/iceberg.vim"]
 	path = bin/.vim/iceberg.vim
 	url = https://github.com/cocopon/iceberg.vim.git
-[submodule "bin/zle-vimode"]
-	path = bin/.zle-vimode
-	url = https://github.com/b4b4r07/zle-vimode.git

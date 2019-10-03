@@ -1,20 +1,28 @@
 "左右のカーソル移動で行間移動可能にする。
 set whichwrap=b,s,<,>,[,]
-"ノーマルモードで文末にカーソルを移動する
-set virtualedit=onemore
+"ノーマルモー"バックアップファイルを作らない
+set nobackup
+"スワップファイルをつくらない
+set noswapfile
+"編集中のファイルが変更されたら自動で読み直す
+set autoread
+"バッファが編集中でもそのファイルを開けるように
+set hidden
+"入力中のコマンドを表示
+set showcmd
 
-" line number
+"行番号表示
 set number
 
 " syntax highlight
 syntax on
 
 " カッコを補完
-inoremap { {}<LEFT>
-inoremap ( ()<LEFT>
-inoremap [ []<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
+"inoremap { {}<LEFT>
+"inoremap ( ()<LEFT>
+"inoremap [ []<LEFT>
+"inoremap " ""<LEFT>
+"inoremap ' ''<LEFT>
 
 " indent
 "set expandtab
@@ -23,6 +31,14 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set smartindent
+set cursorline
+" 現在の行を強調表示（縦）
+set cursorcolumn
+" 行末の1文字先までカーソルを移動できるように
+set virtualedit=onemore""
+"左右のカーソル移動で行間移動可能にする。
+set whichwrap=b,s,<,>,[,]
+"
 
 " color scheme
 colorscheme iceberg
