@@ -1,0 +1,1 @@
+/home/lr/yuyamada/dotfiles/bin/.zsh
