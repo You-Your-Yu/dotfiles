@@ -82,36 +82,6 @@ if filereadable(expand('~/.vim/vimrc.neobundle'))
   source ~/.vim/vimrc.neobundle
 endif
 
-" わがままキーバインド
-"jjで<esc>
-inoremap <silent> jj <esc>
-
-"ノーマルモードでもctrl+hjklで移動
-noremap <C-h> h
-noremap <C-j> gj
-noremap <C-k> gk
-noremap <C-l> l
-"行頭・行末移動
-noremap <C-e> $<RIGHT>a
-noremap <C-a> ^i
-noremap <S-l> $<RIGHT>a
-noremap <S-h> ^i
-"コマンドモードに
-inoremap <silent> jj <ESC>
-"Ctrlで挿入モードでカーソル移動
-inoremap <C-k> <ESC>gka
-inoremap <C-j> <ESC>gja
-inoremap <C-h> <ESC>ha
-inoremap <C-l> <ESC>la
-inoremap <C-d> <BS>
-inoremap <C-a> <C-o>^
-inoremap <C-e> <C-o>$
-inoremap <C-u> <ESC>ui
-inoremap <C-r> <ESC><C-r>i
-inoremap <C-s> <ESC>
-"save
-noremap <C-s> <ESC>:w<CR>
-
 " タブ移動
 nnoremap s <Nop>
 nnoremap sj <C-w>j
@@ -140,11 +110,31 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
-call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
-call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
-call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
-call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
-call submode#map('bufmove', 'n', '', '>', '<C-w>>')
-call submode#map('bufmove', 'n', '', '<', '<C-w><')
-call submode#map('bufmove', 'n', '', '+', '<C-w>+')
-call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+
+" わがままキーバインド
+"jjで<esc>
+inoremap <silent> jj <esc>
+"ctrl+hjklで移動
+noremap <C-h> h
+noremap <C-j> gj
+noremap <C-k> gk
+noremap <C-l> l
+inoremap <C-h> <C-o>h
+inoremap <C-k> <C-o>gk
+inoremap <C-j> <C-o>gj
+inoremap <C-l> <C-o>l
+"行頭・行末移動
+noremap <C-e> $<RIGHT>a
+noremap <C-a> ^i
+inoremap <C-a> <C-o>^
+inoremap <C-e> <C-o>$
+"returnとbackspace
+noremap <C-f> i<CR>
+noremap <C-d> i<BS>
+inoremap <C-f> <CR>
+inoremap <C-d> <BS>
+
+inoremap <C-u> <C-o>u
+inoremap <C-r> <C-o><C-r>
+inoremap <C-s> <ESC>
+

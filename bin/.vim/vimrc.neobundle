@@ -85,12 +85,16 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['pylint']
 
 NeoBundle 'scrooloose/nerdtree' " ファイルをtree表示してくれる
-map <C-n> :NERDTreeToggle<CR>
-noremap q :NERDTreeToggle<CR>
+NeoBundle 'jistr/vim-nerdtree-tabs' " タブページでtreeを同期
+"map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeTabsToggle<CR>
+"noremap q :NERDTreeToggle<CR>
+noremap q :NERDTreeTabsToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden=1
+let NERDTreeMapOpenInTab='<ENTER>'
 
 NeoBundle 'kana/vim-submode' " ウィンドウ関連サブモードを定義
 
@@ -101,4 +105,16 @@ call neobundle#end()
 filetype plugin indent on
 " 未インストールのVimプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定・・・・・・③
 NeoBundleCheck
+
+"--------------------------------------------------------------------------------------------------------------------
+
+call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+
 

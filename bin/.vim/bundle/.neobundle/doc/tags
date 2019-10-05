@@ -338,7 +338,9 @@
 :NERDTreeFocus	NERDTree.txt	/*:NERDTreeFocus*
 :NERDTreeFromBookmark	NERDTree.txt	/*:NERDTreeFromBookmark*
 :NERDTreeMirror	NERDTree.txt	/*:NERDTreeMirror*
+:NERDTreeMirrorToggle	vim-nerdtree-tabs.txt	/*:NERDTreeMirrorToggle*
 :NERDTreeRefreshRoot	NERDTree.txt	/*:NERDTreeRefreshRoot*
+:NERDTreeTabsToggle	vim-nerdtree-tabs.txt	/*:NERDTreeTabsToggle*
 :NERDTreeToggle	NERDTree.txt	/*:NERDTreeToggle*
 :NERDTreeVCS	NERDTree.txt	/*:NERDTreeVCS*
 :NeoBundle	neobundle.txt	/*:NeoBundle*
@@ -828,6 +830,7 @@ neobundle-unite-sources	neobundle.txt	/*neobundle-unite-sources*
 neobundle-usage	neobundle.txt	/*neobundle-usage*
 neobundle-variables	neobundle.txt	/*neobundle-variables*
 neobundle.txt	neobundle.txt	/*neobundle.txt*
+nerdtree-tabs	vim-nerdtree-tabs.txt	/*nerdtree-tabs*
 prabirshrestha	ctrlp-funky.txt	/*prabirshrestha*
 pydave	ctrlp-funky.txt	/*pydave*
 rendon	ctrlp-funky.txt	/*rendon*
@@ -1292,6 +1295,7 @@ unc0	ctrlp-funky.txt	/*unc0*
 unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*
+vim-nerdtree-tabs	vim-nerdtree-tabs.txt	/*vim-nerdtree-tabs*
 vitalk	ctrlp-funky.txt	/*vitalk*
 walkingsparrow	ctrlp-funky.txt	/*walkingsparrow*
 zaynetro	ctrlp-funky.txt	/*zaynetro*

@@ -7,4 +7,5 @@ neobundle.vim
 nerdtree
 syntastic
 vim-ctrlp-commandline
+vim-nerdtree-tabs
 vim-submode
