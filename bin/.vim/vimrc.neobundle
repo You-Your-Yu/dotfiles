@@ -92,6 +92,8 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden=1
 
+NeoBundle 'kana/vim-submode' " ウィンドウ関連サブモードを定義
+
 "--------------------------------------------------------------------------------------------------------------------
 call neobundle#end()
 

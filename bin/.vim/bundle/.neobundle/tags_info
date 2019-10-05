@@ -7,3 +7,4 @@ neobundle.vim
 nerdtree
 syntastic
 vim-ctrlp-commandline
+vim-submode
