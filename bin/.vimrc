@@ -129,9 +129,9 @@ noremap <C-a> ^i
 inoremap <C-a> <C-o>^
 inoremap <C-e> <C-o>$
 "returnとbackspace
-noremap <C-f> i<CR>
+noremap <C-m> i<CR>
 noremap <C-d> i<BS>
-inoremap <C-f> <CR>
+inoremap <C-m> <CR>
 inoremap <C-d> <BS>
 
 inoremap <C-u> <C-o>u

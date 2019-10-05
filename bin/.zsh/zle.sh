@@ -22,5 +22,5 @@ bindkey -M viins '^j'  down-line-or-history
 bindkey -M viins '^k'  up-line-or-history
 bindkey -M viins '^l'  forward-char
 bindkey -M viins '^d'  backward-delete-char
-bindkey -M viins '^f'  accept-line
+bindkey -M viins '^m'  accept-line
 
