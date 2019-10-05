@@ -18,11 +18,11 @@ fi
 #fi
 
 # zle
-source ${HOME}/.zsh/zle
+source ${HOME}/.zsh/zle.sh
 # alias
-source ${HOME}/.zsh/aliases
+source ${HOME}/.zsh/aliases.sh
 # pyenv
-source ${HOME}/.zsh/pyenv
+source ${HOME}/.zsh/pyenv.sh
 # nvm
 source ${HOME}/.nvm/nvm.sh
 
