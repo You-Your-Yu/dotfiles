@@ -75,7 +75,7 @@ endif
 
 " テーマ
 colorscheme iceberg " color scheme
-"syntax on  "syntax highlight
+syntax on  "syntax highlight
 
 " Pluginの読み込み
 if filereadable(expand('~/.vim/vimrc.neobundle'))
