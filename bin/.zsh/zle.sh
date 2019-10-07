@@ -2,7 +2,7 @@ bindkey -v
 bindkey -M viins '\er' history-incremental-pattern-search-forward
 bindkey -M viins '^?'  backward-delete-char
 bindkey -M viins '^A'  beginning-of-line
-#bindkey -M viins '^B'  backward-char
+bindkey -M viins '^B'  backward-char
 bindkey -M viins '^D'  delete-char-or-list
 bindkey -M viins '^E'  end-of-line
 #bindkey -M viins '^F'  forward-char
@@ -15,6 +15,14 @@ bindkey -M viins '^R'  history-incremental-pattern-search-backward
 bindkey -M viins '^U'  backward-kill-line
 bindkey -M viins '^W'  backward-kill-word
 bindkey -M viins '^Y'  yank
+# 補完時にhjklで選択
+zmodload -i zsh/complist
+autoload -Uz compinit && compinit
+zstyle ':completion:*:default' menu select= 2
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
 
 # わがままキーバインド
 bindkey -M viins '^h'  backward-char
@@ -23,4 +31,5 @@ bindkey -M viins '^k'  up-line-or-history
 bindkey -M viins '^l'  forward-char
 bindkey -M viins '^d'  backward-delete-char
 bindkey -M viins '^m'  accept-line
+bindkey -M viins '^f'  accept-line
 
