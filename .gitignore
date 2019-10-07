@@ -1,2 +1,3 @@
 bin/.ssh/
 !bin/.ssh/config
+bin/.vim/bundle
