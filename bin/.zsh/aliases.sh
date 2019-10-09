@@ -4,7 +4,7 @@ alias gst='git status'
 alias ga='git add'
 alias gcm='git commit -m'
 alias gp='git push'
-
+alias gpl='git pull'
 # tmux
 alias ta='tmux a'
 
