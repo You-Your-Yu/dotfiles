@@ -49,6 +49,8 @@ if neobundle#is_installed('neocomplete.vim')
     imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
 endif
 
+NeoBundle 'zxqfl/tabnine-vim'
+
 " 多機能セレクタ
 NeoBundle 'ctrlpvim/ctrlp.vim'
 " CtrlPの拡張プラグイン. 関数検索

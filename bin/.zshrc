@@ -26,7 +26,7 @@ source ${HOME}/.zsh/pyenv.sh
 # nvm
 source ${HOME}/.nvm/nvm.sh
 
-# jumanpp
+# commands built on local
 export PATH="${HOME}/local/bin:$PATH"
 
 echo "May a force be with you."

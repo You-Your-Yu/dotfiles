@@ -1,5 +1,5 @@
 [[plugins]]
-repo = 'itchyny/lightline.vim' " ステータスラインの表示内容強化
+repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
@@ -7,8 +7,17 @@ repo = 'Yggdroot/indentLine'
 [[plugins]]
 repo = 'Shougo/neosnippet'
 
+#[[plugins]]
+#repo = 'Shougo/neocomplete.vim'
+
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
 
 [[plugins]]
 repo = 'Shougo/neosnippet'
