@@ -23,6 +23,8 @@ source ${HOME}/.zsh/zle.sh
 source ${HOME}/.zsh/aliases.sh
 # pyenv
 source ${HOME}/.zsh/pyenv.sh
+# perl
+source ${HOME}/.zsh/perl.sh
 # nvm
 source ${HOME}/.nvm/nvm.sh
 
@@ -30,3 +32,4 @@ source ${HOME}/.nvm/nvm.sh
 export PATH="${HOME}/local/bin:$PATH"
 
 echo "May a force be with you."
+
