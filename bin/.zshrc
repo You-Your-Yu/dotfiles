@@ -25,6 +25,8 @@ source ${HOME}/.zsh/aliases.sh
 source ${HOME}/.zsh/pyenv.sh
 # perl
 source ${HOME}/.zsh/perl.sh
+# rouge
+source ${HOME}/.zsh/rouge.sh
 # nvm
 source ${HOME}/.nvm/nvm.sh
 
