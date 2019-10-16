@@ -134,7 +134,7 @@ noremap <C-m> i<CR>
 noremap <C-d> i<BS>
 inoremap <C-m> <CR>
 inoremap <C-d> <BS>
-
+"カーソルの前にペースト
 inoremap <C-u> <C-o>u
 inoremap <C-r> <C-o><C-r>
 inoremap <C-s> <ESC>
