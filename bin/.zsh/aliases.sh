@@ -8,6 +8,8 @@ alias gpl='git pull'
 alias gd='git diff'
 # tmux
 alias ta='tmux a'
+alias tat='tmux a -t'
+alias tls='tmux ls'
 
 # gpu
 alias ns='nvidia-smi'
