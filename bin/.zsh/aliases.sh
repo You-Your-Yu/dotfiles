@@ -17,6 +17,8 @@ alias tls='tmux ls'
 # gpu
 alias ns='nvidia-smi'
 
+alias proxy='sh ~/.zsh/proxy.sh'
+
 # fujiso-san configuration↲
 alias gpu='watch -n1 "hostname; nvidia-smi pmon -s um -c 1"'↲
 alias imux='tmux attach || tmux new-session \; source-file ~/.tmux/imux'
