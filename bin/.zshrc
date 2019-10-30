@@ -21,6 +21,8 @@ fi
 source ${HOME}/.zsh/zle.sh
 # alias
 source ${HOME}/.zsh/aliases.sh
+# linuxbrew
+source ${HOME}/.zsh/linuxbrew.sh
 # pyenv
 source ${HOME}/.zsh/pyenv.sh
 # perl
