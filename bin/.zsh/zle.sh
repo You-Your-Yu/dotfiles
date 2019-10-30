@@ -33,3 +33,12 @@ bindkey -M viins '^d'  backward-delete-char
 bindkey -M viins '^m'  accept-line
 bindkey -M viins '^f'  accept-line
 
+# history補完
+function peco-history-selection() {
+  BUFFER=`\\history -n 1 | tac | awk '!a[$0]++' | peco`  
+  CURSOR=$#BUFFER
+  zle reset-prompt
+}
+
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
