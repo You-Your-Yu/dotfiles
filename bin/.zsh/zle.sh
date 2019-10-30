@@ -35,7 +35,10 @@ bindkey -M viins '^f'  accept-line
 
 # history補完
 function peco-history-selection() {
-  BUFFER=`\\history -n 1 | tac | awk '!a[$0]++' | peco`  
+  if test $(uname) = LINUX ; then
+    BUFFER=`\\history -n 1 | tac | awk '!a[$0]++' | peco`
+  elif test $(uname) = Debian ; then
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
   CURSOR=$#BUFFER
   zle reset-prompt
 }
