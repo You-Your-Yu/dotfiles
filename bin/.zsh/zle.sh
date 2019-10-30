@@ -35,7 +35,7 @@ bindkey -M viins '^f'  accept-line
 
 # history補完
 function peco-history-selection() {
-  if test $(uname) = LINUX ; then
+  if test $(uname) = Linux ; then
     BUFFER=`\\history -n 1 | tac | awk '!a[$0]++' | peco`
   elif test $(uname) = Darwin ; then
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
