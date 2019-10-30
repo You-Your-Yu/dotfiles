@@ -37,8 +37,11 @@ bindkey -M viins '^f'  accept-line
 function peco-history-selection() {
   if test $(uname) = LINUX ; then
     BUFFER=`\\history -n 1 | tac | awk '!a[$0]++' | peco`
-  elif test $(uname) = Debian ; then
+  elif test $(uname) = Darwin ; then
     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+  else
+    echo "unkown uname: $(uname)"
+  fi
   CURSOR=$#BUFFER
   zle reset-prompt
 }
