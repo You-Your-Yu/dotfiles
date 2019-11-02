@@ -85,8 +85,6 @@ endif
 set clipboard+=unnamedplus
 "set clipboard=unnamed,autoselect
 
-"矩形選択設定
-set virtualedit=block
 
 
 " テーマ
