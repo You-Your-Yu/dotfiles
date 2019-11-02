@@ -74,6 +74,8 @@ if &term =~ "xterm"
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
+
+
 " テーマ
 colorscheme iceberg " color scheme
 syntax on  "syntax highlight
@@ -114,7 +116,7 @@ nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 " わがままキーバインド
 "jjで<esc>
-inoremap <silent> jj <esc>
+inoremap <silent> jj <esc>l
 "ctrl+hjklで移動
 noremap <C-h> h
 noremap <C-j> gj
@@ -134,8 +136,9 @@ noremap <C-m> i<CR>
 noremap <C-d> i<BS>
 inoremap <C-m> <CR>
 inoremap <C-d> <BS>
-"カーソルの前にペースト
+"前カーソルの前にペースト & レジスタ指定
+noremap p "0P
+
+" insert modeでもundo/redo
 inoremap <C-u> <C-o>u
 inoremap <C-r> <C-o><C-r>
-inoremap <C-s> <ESC>
-
