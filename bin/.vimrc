@@ -149,8 +149,8 @@ noremap <C-m> i<CR>
 noremap <C-d> i<BS>
 inoremap <C-m> <CR>
 inoremap <C-d> <BS>
-"前カーソルの前にペースト & レジスタ指定
-noremap p "0P
+"ペーストのレジスタ指定
+noremap p "0p
 
 " insert modeでもundo/redo
 inoremap <C-u> <C-o>u
