@@ -27,6 +27,7 @@ set incsearch " インクリメンタルサーチ. １文字入力毎に検索�
 set ignorecase " 検索パターンに大文字小文字を区別しない
 set smartcase " 検索パターンに大文字を含んでいたら大文字小文字を区別する
 set hlsearch " 検索結果をハイライト
+set wrapscan                    "行末まで検索した先頭に戻る
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>  " ESCキー2度押しでハイライトの切り替え
 
 " カーソル
@@ -45,6 +46,7 @@ set showmatch " 括弧の対応関係を一瞬表示する
 source $VIMRUNTIME/macros/matchit.vim " Vimの「%」を拡張する
 
 " コマンド補完
+set completeopt=menu
 set wildmenu " コマンドモードの補完
 set history=5000 " 保存するコマンド履歴の数
 
@@ -74,6 +76,17 @@ if &term =~ "xterm"
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
+"カレントディレクトリ設定(自動的に開いたファイルのディレクトリに移動)
+if exists('+autochdir')
+  set autochdir
+endif
+
+"クリップボード設定
+set clipboard+=unnamedplus
+"set clipboard=unnamed,autoselect
+
+"矩形選択設定
+set virtualedit=block
 
 
 " テーマ
@@ -116,16 +129,16 @@ nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 " わがままキーバインド
 "jjで<esc>
-inoremap <silent> jj <esc>l
+inoremap <silent> jj <esc>
 "ctrl+hjklで移動
 noremap <C-h> h
 noremap <C-j> gj
 noremap <C-k> gk
 noremap <C-l> l
-inoremap <C-h> <C-o>h
-inoremap <C-k> <C-o>gk
-inoremap <C-j> <C-o>gj
-inoremap <C-l> <C-o>l
+inoremap <C-h> <Left>
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-l> <Right>
 "行頭・行末移動
 noremap <C-e> $<RIGHT>a
 noremap <C-a> ^i
