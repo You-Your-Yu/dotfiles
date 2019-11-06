@@ -13,6 +13,7 @@ alias gla='git log --graph --all --pretty=format:"%Cred%h%Creset -%C(yellow)%d%C
 alias ta='tmux a'
 alias tat='tmux a -t'
 alias tls='tmux ls'
+alias tcc='tmux -CC'
 
 # gpu
 alias ns='nvidia-smi'
