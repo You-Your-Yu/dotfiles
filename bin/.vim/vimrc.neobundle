@@ -84,7 +84,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 " 「:wq」で終了する時も構文エラーチェックする
 let g:syntastic_check_on_wq = 1
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['flake8']
 
 NeoBundle 'scrooloose/nerdtree' " ファイルをtree表示してくれる
 NeoBundle 'jistr/vim-nerdtree-tabs' " タブページでtreeを同期

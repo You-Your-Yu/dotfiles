@@ -21,6 +21,8 @@ fi
 source ${HOME}/.zsh/zle.sh
 # alias
 source ${HOME}/.zsh/aliases.sh
+# commands built on local
+export PATH="${HOME}/local/bin:$PATH"
 # linuxbrew
 source ${HOME}/.zsh/linuxbrew.sh
 # pyenv
@@ -32,8 +34,6 @@ source ${HOME}/.zsh/rouge.sh
 # nvm
 source ${HOME}/.nvm/nvm.sh
 
-# commands built on local
-export PATH="${HOME}/local/bin:$PATH"
 
 echo "May a force be with you."
 
