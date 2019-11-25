@@ -25,6 +25,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 
 # わがままキーバインド
+bindkey jj vi-cmd-mode
 bindkey -M viins '^h'  backward-char
 bindkey -M viins '^j'  down-line-or-history
 bindkey -M viins '^k'  up-line-or-history
