@@ -29,6 +29,8 @@ source ${HOME}/.zsh/linuxbrew.sh
 source ${HOME}/.zsh/pyenv.sh
 # perl
 source ${HOME}/.zsh/perl.sh
+# golang
+source ${HOME}/.zsh/golang.sh
 # rouge
 source ${HOME}/.zsh/rouge.sh
 # nvm
