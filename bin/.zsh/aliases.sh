@@ -17,6 +17,7 @@ alias ta='tmux a'
 alias tat='tmux a -t'
 alias tls='tmux ls'
 alias tcc='tmux -CC'
+alias trn='tmux rename -t'
 
 # gpu
 alias ns='nvidia-smi'
