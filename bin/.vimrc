@@ -1,4 +1,3 @@
-
 set encoding=utf-8
 scriptencoding utf-8
 set fileencoding=utf-8 " 保存時の文字コード
@@ -82,8 +81,8 @@ if exists('+autochdir')
 endif
 
 "クリップボード設定
-set clipboard+=unnamedplus
-"set clipboard=unnamed,autoselect
+"set clipboard=unnamedplus,autoselect
+set clipboard=unnamed,autoselect
 
 
 
@@ -138,7 +137,7 @@ inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 inoremap <C-l> <Right>
 "行頭・行末移動
-noremap <C-e> $<RIGHT>a
+noremap <C-e> $<Right>a
 noremap <C-a> ^i
 inoremap <C-a> <C-o>^
 inoremap <C-e> <C-o>$
