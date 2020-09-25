@@ -13,6 +13,7 @@ alias gla='git log --graph --all --pretty=format:"%Cred%h%Creset -%C(yellow)%d%C
 alias less='less -R'
 
 # tmux
+alias t='tmux'
 alias ta='tmux a'
 alias tat='tmux a -t'
 alias tls='tmux ls'
@@ -23,6 +24,8 @@ alias trn='tmux rename -t'
 alias ns='nvidia-smi'
 
 alias proxy='sh ~/.zsh/proxy.sh'
+
+alias time='gtime'
 
 # fujiso-san configuration↲
 alias gpu='watch -n1 "hostname; nvidia-smi pmon -s um -c 1"'↲
@@ -39,3 +42,7 @@ alias pc='pbcopy'
 alias pp='pbpaste'
 alias gpp='g++'
 alias gr='go run'
+
+# atcoder
+alias gojt='gollect >! gollect/main.go && oj t --gnu-time gtime -c "go run gollect/main.go"'
+alias accs='echo "abca" | acc s -s -- -w 0'
